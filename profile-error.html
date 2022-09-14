@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Request a payout</title>
+	<title>Profile</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -123,55 +123,49 @@
 						</div>
 
 						<div class="inner-content__block discount">
-							<h2 class="inner-content__title">Request a payout</h2>
-							<form action="#" class="discount__block payout-form">
-								<h3 class="discount__row payout-form__label">True Meds Shop 1</h3>
-								<div class="options">
-									<div class="options__row">
-										<div class="options__item">
-											<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
-											<label for="o_1" class="options__label"><span class="options__text">USDT(trc20) 2$ + 1%</span></label>
-										</div>
-										<p class="options__placeholder">Txttete9te0te**********fdoetoeew</p>
+							<h2 class="inner-content__title">Profile</h2>
+							<!-- Для показа сообщения об успешной\неуспешной отправки данных добавить соответсвующий класс (.succes\.error) для .form-download--profile -->
+							<form action="#" class="discount__block form-download form-download--profile error">
+								<h3 class="discount__row discount__label">James</h3>
+								<div class="discount__row discount__row--details">
+									<div class="form-download__input form-download__input--profile">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Email" class="input input--light">
 									</div>
-									<div class="options__row">
-										<div class="options__item">
-											<input hidden id="o_2" class="options__input" checked type="radio" value="1" name="option">
-											<label for="o_2" class="options__label options__label--empty"><span class="options__text">USDT(erc20) 20$ + 1%</span></label>
-										</div>
-										<p class="options__placeholder"></p>
+									<span class="form-download__info">james@google.com</span>
+								</div>
+								<div class="discount__row discount__row--details">
+									<div class="form-download__input form-download__input--profile">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Telegram" class="input input--light">
 									</div>
-									<div class="options__row">
-										<div class="options__item">
-											<input hidden id="o_3" class="options__input" checked type="radio" value="1" name="option">
-											<label for="o_3" class="options__label"><span class="options__text">Capitalist 1%</span></label>
-										</div>
-										<p class="options__placeholder">Txttete9te0te**********fdoetoeew</p>
+									<span class="form-download__info">@contacttelegram</span>
+								</div>
+								<div class="discount__row discount__row--details">
+									<div class="form-download__input form-download__input--profile">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Jabber" class="input input--light">
 									</div>
-									<div class="options__row">
-										<div class="options__item">
-											<input hidden id="o_5" class="options__input" checked type="radio" value="1" name="option">
-											<label for="o_5" class="options__label options__label--empty"><span class="options__text">Webmoney 1%</span></label>
-										</div>
-										<p class="options__placeholder"></p>
+									<span class="form-download__info">james@jabber.org</span>
+								</div>
+								<div class="discount__row discount__row--details">
+									<div class="form-download__input form-download__input--profile">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="ICQ" class="input input--light">
 									</div>
-									<div class="options__row">
-										<div class="options__item">
-											<input hidden id="o_6" class="options__input" checked type="radio" value="1" name="option">
-											<label for="o_6" class="options__label options__label--empty"><span class="options__text">Bitcoin 1%</span></label>
-										</div>
-										<p class="options__placeholder"></p>
+									<span class="form-download__info">543543543543234</span>
+								</div>
+								<div class="discount__row discount__row--details">
+									<div class="form-download__input form-download__input--profile">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="New password" class="input input--light">
 									</div>
-									<div class="options__row options__row--last">
-										<div class="options__c-input">
-											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="$100" class="input input--light">
-										</div>
-										<button type="submit" class="options__button">Request a payout</button>
+									<span class="form-download__info"></span>
+								</div>
+								<div class="discount__row discount__row--details">
+									<div class="form-download__caption">Key</div>
+									<div class="form-download__input form-download__input--profile">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Private Code" class="input input--light">
 									</div>
+									<button type="submit" class="form-download__button form-download__button--details">Save profile details</button>
 								</div>
 							</form>
 						</div>
-
 						<p class="bottom-info">© since ancient times. TrueMeds - To Be a True Money Maker.</p>
 					</section>
 				</div>
