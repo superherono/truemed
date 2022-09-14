@@ -2491,14 +2491,7 @@ textarea.input {
   }
 
   .no-webp .wrapper::before{
-    background: url("../img/bg-2.png") 0 0/1600px 900px no-repeat; }
-
-  .no-webp .wrapper::before{
-    background: url("../img/test-2.jpg") 0 0/cover no-repeat; }
-
-  .wrapper::before {
-    background-attachment: fixed;
-  }
+    background: url("../img/test-2.jpg") center/cover no-repeat fixed; }
 
   .form-download:not(.discount__block) {
     display: -webkit-box;
@@ -3627,12 +3620,7 @@ textarea.input {
 
 @media (min-width: 29.99875em){
 
-  .webp .wrapper::before{ background: url(../img/bg-2.webp) 0 0/1600px 900px no-repeat; }
-}
-
-@media (min-width: 29.99875em){
-
-  .webp .wrapper::before{ background: url(../img/test-2.webp) 0 0/cover no-repeat; }
+  .webp .wrapper::before{ background: url(../img/test-2.webp) center/cover no-repeat fixed; }
 }
 
 @media (max-width: 29.99875em){
