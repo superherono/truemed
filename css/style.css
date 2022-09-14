@@ -2490,7 +2490,7 @@ textarea.input {
   }
 
   .no-webp .wrapper::before{
-    background: url("../img/main-4.png") center/cover no-repeat fixed; }
+    background: url("../img/main-4.png") bottom center/cover no-repeat fixed; }
 
   .form-download:not(.discount__block) {
     display: -webkit-box;
@@ -3619,7 +3619,7 @@ textarea.input {
 
 @media (min-width: 29.99875em){
 
-  .webp .wrapper::before{ background: url(../img/main-4.webp) center/cover no-repeat fixed; }
+  .webp .wrapper::before{ background: url(../img/main-4.webp) bottom center/cover no-repeat fixed; }
 }
 
 @media (max-width: 29.99875em){
