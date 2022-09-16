@@ -1601,17 +1601,19 @@
                 switchBtn.classList.add("active");
             }));
         }));
-        let script_status = document.querySelector(".status");
+        let statusArr = document.querySelectorAll(".status");
         const mainPageMessage = document.querySelector(".welcome__top");
-        if (script_status) if (script_status.classList.contains("succes") || script_status.classList.contains("error")) document.documentElement.addEventListener("click", (function(e) {
-            if (!e.target.closest(".status")) {
-                script_status.classList.remove("error");
-                script_status.classList.remove("succes");
-                if (mainPageMessage) {
-                    mainPageMessage.classList.remove("_spoller-active");
-                    _slideUp(mainPageMessage.nextElementSibling, 500);
+        if (statusArr) statusArr.forEach((status => {
+            if (status.classList.contains("succes") || status.classList.contains("error")) document.documentElement.addEventListener("click", (function(e) {
+                if (!e.target.closest(".status")) {
+                    status.classList.remove("error");
+                    status.classList.remove("succes");
+                    if (mainPageMessage) {
+                        mainPageMessage.classList.remove("_spoller-active");
+                        _slideUp(mainPageMessage.nextElementSibling, 500);
+                    }
                 }
-            }
+            }));
         }));
         window["FLS"] = true;
         isWebp();
