@@ -1603,7 +1603,7 @@
         }));
         let statusArr = document.querySelectorAll(".status");
         const mainPageMessage = document.querySelector(".welcome__top");
-        const mainCloseArr = document.querySelector("status__message--error a img");
+        const mainCloseArr = document.querySelector(".status__icon img");
         if (statusArr) statusArr.forEach((status => {
             if (status.classList.contains("succes") || status.classList.contains("error")) document.documentElement.addEventListener("click", (function(e) {
                 if (!e.target.closest(".status")) {
