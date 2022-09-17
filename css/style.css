@@ -1144,7 +1144,7 @@ textarea.input {
   line-height: 2.5714285714;
 }
 
-.status__message--error:not(.form-header .status__message--error) {
+.status__message--error:not(.form-header > .status__message--error) {
   background-color: rgba(141, 35, 35, 0.8);
 }
 
@@ -2027,6 +2027,7 @@ textarea.input {
 .send-btn img {
   width: 10px;
   height: 15px;
+  vertical-align: middle;
 }
 
 .track-id {

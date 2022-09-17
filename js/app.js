@@ -1603,9 +1603,18 @@
         }));
         let statusArr = document.querySelectorAll(".status");
         const mainPageMessage = document.querySelector(".welcome__top");
+        const mainCloseArr = document.querySelector("status__message--error a img");
         if (statusArr) statusArr.forEach((status => {
             if (status.classList.contains("succes") || status.classList.contains("error")) document.documentElement.addEventListener("click", (function(e) {
                 if (!e.target.closest(".status")) {
+                    status.classList.remove("error");
+                    status.classList.remove("succes");
+                    if (mainPageMessage) {
+                        mainPageMessage.classList.remove("_spoller-active");
+                        _slideUp(mainPageMessage.nextElementSibling, 500);
+                    }
+                }
+                if (e.target == mainCloseArr) {
                     status.classList.remove("error");
                     status.classList.remove("succes");
                     if (mainPageMessage) {
