@@ -2722,7 +2722,9 @@ textarea.input {
 
 .orders__desc {
   margin: 0 0 0.75rem 0;
+  padding: 17px 15px;
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
   font-size: 0.875rem;
   line-height: 1.2857142857;
 }
@@ -3182,7 +3184,6 @@ textarea.input {
 
   .orders__desc {
     white-space: nowrap;
-    padding: 17px 15px;
   }
 
   .tickets__row {
@@ -3393,10 +3394,6 @@ textarea.input {
 
   .orders__row--payment {
     background-color: rgba(0, 0, 0, 0.2);
-  }
-
-  .orders__desc {
-    background-color: rgba(0, 0, 0, 0.1);
   }
 
   .shop-links__image {
@@ -3947,10 +3944,6 @@ textarea.input {
 
   .orders__top-row {
     padding: 15px 20px;
-  }
-
-  .orders__desc {
-    padding: 17px 0;
   }
 
   .tickets__row {
