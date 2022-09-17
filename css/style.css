@@ -1170,6 +1170,10 @@ textarea.input {
   background-color: #8d2323;
 }
 
+.form-header .status__message--error img {
+  vertical-align: middle;
+}
+
 .text-elipsis {
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -3423,6 +3427,10 @@ textarea.input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .top-inner-content__item:first-child .top-inner-content__icon {
+    margin-left: -5px;
   }
 
   .main-domains__top-row {
