@@ -180,8 +180,12 @@ h6 {
   transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
 }
 
+.form-download--profile .discount__row:not(:last-of-type) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .form-download__input {
-  border-bottom: 1px solid #68765a;
+  border-bottom: 1px solid #fff;
   -webkit-transition: border-color 0.3s ease 0s;
   -o-transition: border-color 0.3s ease 0s;
   transition: border-color 0.3s ease 0s;
@@ -497,7 +501,7 @@ textarea.input {
 }
 
 .options__c-input {
-  border-bottom: 1px solid #68765a;
+  border-bottom: 1px solid #fff;
   -webkit-transition: border-color 0.3s ease 0s;
   -o-transition: border-color 0.3s ease 0s;
   transition: border-color 0.3s ease 0s;
@@ -2068,6 +2072,10 @@ textarea.input {
   text-align: center;
 }
 
+.domains-data__row:not(.domains-data__row--top, .domains-data__row--total, .domains-data__row--refferer) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .domains-data__row--top {
   padding: 21px 20px 21px 18px;
   font-weight: 700;
@@ -2102,11 +2110,11 @@ textarea.input {
 }
 
 .domains-data__descr {
-  max-width: 40rem;
   margin: 0px auto;
   border-radius: 10px;
   font-size: 1rem;
   line-height: 1.2857142857;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .domains-data__history-name {
@@ -2313,6 +2321,10 @@ textarea.input {
 
 .discount__row:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.discount__row:not(:last-of-type) {
+  margin: 0 0 0.0625rem 0;
 }
 
 .discount__row--news:nth-child(odd) {
@@ -2560,6 +2572,18 @@ textarea.input {
 
 .orders__row {
   padding: 15px 20px 20px;
+}
+
+.orders__row--accept {
+  background-color: rgba(96, 162, 39, 0.2);
+}
+
+.orders__row--declined {
+  background-color: rgba(204, 26, 26, 0.2);
+}
+
+.orders__row--checking {
+  background-color: rgba(255, 240, 0, 0.2);
 }
 
 .orders__row--payment:not(:last-child) {
@@ -3357,29 +3381,13 @@ textarea.input {
     background-color: rgba(0, 0, 0, 0.2);
   }
 
-  .domains-data__row:not(.domains-data__row--top, .domains-data__row--total) {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-
   .domains-data__descr {
-    background-color: rgba(0, 0, 0, 0.1);
+    max-width: 40rem;
   }
 
   .orders {
     border-radius: 10px;
     overflow: hidden;
-  }
-
-  .orders__row--accept {
-    background-color: rgba(96, 162, 39, 0.2);
-  }
-
-  .orders__row--declined {
-    background-color: rgba(204, 26, 26, 0.2);
-  }
-
-  .orders__row--checking {
-    background-color: rgba(255, 240, 0, 0.2);
   }
 
   .orders__row--payment {
@@ -3443,12 +3451,40 @@ textarea.input {
     overflow-x: auto;
   }
 
+  .domains-data__row:not(.domains-data__row--top, .domains-data__row--total, .domains-data__row--refferer) {
+    min-width: 700px;
+  }
+
+  .domains-data__descr {
+    min-width: 43.75rem;
+  }
+
   .domains-data__profit {
     padding-right: 15px;
   }
 
   .orders {
     overflow-x: auto;
+  }
+
+  .orders__row {
+    min-width: 670px;
+  }
+
+  .orders__total {
+    min-width: 100%;
+    -webkit-transition: -webkit-box-pack 0.3s ease 0s;
+    transition: -webkit-box-pack 0.3s ease 0s;
+    -o-transition: justify-content 0.3s ease 0s;
+    transition: justify-content 0.3s ease 0s;
+    transition: justify-content 0.3s ease 0s, -webkit-box-pack 0.3s ease 0s, -ms-flex-pack 0.3s ease 0s;
+  }
+
+  .orders__total.right {
+    min-width: 670px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
@@ -3921,11 +3957,20 @@ textarea.input {
   }
 
   .tickets__row--input {
-    padding: 0;
+    margin-bottom: 1px;
   }
 
   .tickets__row--input input {
     padding: 13px;
+    padding-left: 0px;
+  }
+
+  .tickets__row--textarea {
+    padding-right: 13px;
+  }
+
+  .tickets__row--dark {
+    padding: 13px 13px 13px 20px;
   }
 
   .tickets__back-link {

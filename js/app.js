@@ -1615,6 +1615,12 @@
                 }
             }));
         }));
+        let topBar = document.querySelector(".main-domains__orders");
+        let totalBar = document.querySelector(".orders__total");
+        if (topBar && totalBar) topBar.addEventListener("scroll", (function(event) {
+            let cuurentPosition = this.scrollLeft;
+            if (cuurentPosition > 250) totalBar.classList.add("right"); else totalBar.classList.remove("right");
+        }));
         window["FLS"] = true;
         isWebp();
         menuInit();
