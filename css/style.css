@@ -2433,7 +2433,7 @@ textarea.input {
   position: relative;
   display: block;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 18px !important;
   cursor: pointer;
 }
 
@@ -2471,6 +2471,7 @@ textarea.input {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 18px !important;
   -webkit-transition: visibility 0.3s ease 0s, opacity 0.3s ease 0s;
   -o-transition: visibility 0.3s ease 0s, opacity 0.3s ease 0s;
   transition: visibility 0.3s ease 0s, opacity 0.3s ease 0s;
@@ -2481,6 +2482,7 @@ textarea.input {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 18px !important;
 }
 
 .data-table {
