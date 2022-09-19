@@ -1606,13 +1606,11 @@
         const mainCloseArr = document.querySelector(".status__icon img");
         if (statusArr) statusArr.forEach((status => {
             if (status.classList.contains("succes") || status.classList.contains("error")) document.documentElement.addEventListener("click", (function(e) {
-                if (!e.target.closest(".status")) {
-                    status.classList.remove("error");
-                    status.classList.remove("succes");
-                    if (mainPageMessage) {
-                        mainPageMessage.classList.remove("_spoller-active");
-                        _slideUp(mainPageMessage.nextElementSibling, 500);
-                    }
+                status.classList.remove("error");
+                status.classList.remove("succes");
+                if (mainPageMessage) {
+                    mainPageMessage.classList.remove("_spoller-active");
+                    _slideUp(mainPageMessage.nextElementSibling, 500);
                 }
                 if (e.target == mainCloseArr) {
                     status.classList.remove("error");

@@ -185,7 +185,7 @@ h6 {
 }
 
 .form-download__input {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #aeb7a6;
   -webkit-transition: border-color 0.3s ease 0s;
   -o-transition: border-color 0.3s ease 0s;
   transition: border-color 0.3s ease 0s;
@@ -501,7 +501,7 @@ textarea.input {
 }
 
 .options__c-input {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #aeb7a6;
   -webkit-transition: border-color 0.3s ease 0s;
   -o-transition: border-color 0.3s ease 0s;
   transition: border-color 0.3s ease 0s;
@@ -1161,6 +1161,11 @@ textarea.input {
   margin-left: 23px;
 }
 
+.status__message--error b {
+  line-height: 0.9;
+  font-size: 16px;
+}
+
 .error .status__message--error {
   opacity: 1;
   visibility: visible;
@@ -1567,12 +1572,6 @@ textarea.input {
   margin: 0 0 0.1875rem 0;
 }
 
-.aside-content__social .social-list__link {
-  -webkit-transition: color 0.3s ease 0s;
-  -o-transition: color 0.3s ease 0s;
-  transition: color 0.3s ease 0s;
-}
-
 .inner-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1612,7 +1611,7 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8px 5px;
+  padding: 12px 9px;
   background-color: #dbf2b0;
   -webkit-transform: translate(100%, 0px);
       -ms-transform: translate(100%, 0px);
@@ -2056,6 +2055,7 @@ textarea.input {
 
 .domains-data__wrapper {
   padding-top: 13px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .domains-data__wrapper:not(:last-child) {
@@ -3261,7 +3261,8 @@ textarea.input {
   .welcome-form__tooltip {
     bottom: -27px;
     left: 0;
-    width: 230px;
+    width: 270px;
+    white-space: nowrap;
   }
 
   .welcome-form__button {
@@ -3379,10 +3380,6 @@ textarea.input {
             align-items: center;
   }
 
-  .domains-data__wrapper {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-
   .domains-data__descr {
     max-width: 40rem;
   }
@@ -3447,6 +3444,10 @@ textarea.input {
 
   .domains-data {
     overflow-x: auto;
+  }
+
+  .domains-data__wrapper {
+    min-width: 700px;
   }
 
   .domains-data__row:not(.domains-data__row--top, .domains-data__row--total, .domains-data__row--refferer) {
@@ -3526,7 +3527,7 @@ textarea.input {
     top: 0;
     left: 0;
     overflow: auto;
-    background-color: #417d21;
+    background-color: rgba(65, 125, 33, 0.9);
     padding: 8.75rem 1rem 1.5rem;
     -webkit-transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
     -o-transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
@@ -3535,18 +3536,6 @@ textarea.input {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-  }
-
-  .menu__body::before {
-    content: "";
-    position: fixed;
-    z-index: 5;
-    width: 100%;
-    height: 100px;
-    left: 0;
-    top: 0;
-    background-color: rgba(65, 125, 33, 0.85);
-    opacity: 0;
   }
 
   .menu-open .menu__body {
@@ -3886,11 +3875,11 @@ textarea.input {
   }
 
   .data-table__row {
-    padding: 15px 15px 40px;
+    padding: 15px 80px 15px 15px;
   }
 
   .data-table__row--top {
-    padding: 15px;
+    padding: 15px 80px 15px 15px;
   }
 
   .data-table__row span:first-of-type {
@@ -3903,16 +3892,16 @@ textarea.input {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 40%;
             flex: 0 1 40%;
-    text-align: right;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+  }
+
+  .data-table__row--referrals {
+    padding: 8px 15px;
   }
 
   .data-table__row--referrals span:last-of-type {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 40%;
-            flex: 0 1 40%;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3921,8 +3910,8 @@ textarea.input {
 
   .data-table__row--referrals span:first-of-type {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 60%;
-            flex: 0 1 60%;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
     text-align: center;
   }
 
@@ -3935,11 +3924,7 @@ textarea.input {
   }
 
   .data-table__button {
-    right: 50%;
-    top: 85%;
-    -webkit-transform: translate(50%, -100%);
-        -ms-transform: translate(50%, -100%);
-            transform: translate(50%, -100%);
+    right: -30px;
   }
 
   .orders__top-row {
@@ -4092,10 +4077,6 @@ textarea.input {
     -webkit-transform: translate(2px, 0px) rotate(-90deg);
         -ms-transform: translate(2px, 0px) rotate(-90deg);
             transform: translate(2px, 0px) rotate(-90deg);
-  }
-
-  .aside-content__social .social-list__link:hover {
-    color: var(--black);
   }
 
   .inner-content__logout:hover {
